@@ -50,17 +50,15 @@ public class WorkerThread extends Thread {
     public void run() {
         while (true) {
             try {
-                Task task = taskQueue.take(); // Așteaptă până când există un task
+                Task task = taskQueue.take(); 
                 String command = task.getCommand();
                 Socket clientSocket = task.getClientSocket();
 
                 String response = processCommand(command);
 
-                // Trimitere răspuns înapoi către client
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
                 out.println(response);
 
-                // Închide conexiunea
                 clientSocket.close();
 
             } catch (Exception e) {
@@ -69,3 +67,4 @@ public class WorkerThread extends Thread {
         }
     }
 }
+
