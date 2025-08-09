@@ -46,7 +46,6 @@ public class WorkerThread extends Thread {
             return "ERROR: " + e.getMessage();
         }
     }
-
     public void run() {
         while (true) {
             try {
@@ -55,16 +54,15 @@ public class WorkerThread extends Thread {
                 Socket clientSocket = task.getClientSocket();
 
                 String response = processCommand(command);
-
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
                 out.println(response);
 
                 clientSocket.close();
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
 }
+
 
