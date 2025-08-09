@@ -11,12 +11,10 @@ public class DistributedDocDBServer {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(PORT);
         BlockingQueue<Task> taskQueue = new LinkedBlockingQueue<>();
-
         // Pornim workerii
         for (int i = 0; i < NUM_WORKERS; i++) {
             new WorkerThread(taskQueue).start();
         }
-
         System.out.println("Server started on port " + PORT);
 
         while (true) {
@@ -24,7 +22,6 @@ public class DistributedDocDBServer {
             BufferedReader in = new BufferedReader(
                 new InputStreamReader(clientSocket.getInputStream())
             );
-
             String command = in.readLine();
             if (command != null && !command.trim().isEmpty()) {
                 taskQueue.offer(new Task(command, clientSocket));
@@ -32,3 +29,4 @@ public class DistributedDocDBServer {
         }
     }
 }
+
