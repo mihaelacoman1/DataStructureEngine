@@ -29,7 +29,7 @@ DistributedDocDB is a simple client-server application implemented in Java that 
 
 1. **Clone the repository:**
     ```bash
-    git clone (path)
+    git clone https://github.com/mihaelacoman1/DataStructureEngine
     cd DataStructureEngine
     ```
 
@@ -66,4 +66,5 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
+
 
