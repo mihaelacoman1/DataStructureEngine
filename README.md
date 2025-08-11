@@ -1,4 +1,4 @@
-### DistributedDocDB - Simple Distributed Document Storage System
+## DistributedDocDB - Simple Distributed Document Storage System
 
 DistributedDocDB is a Java-based client-server application designed to store, retrieve, and delete files remotely over a network. This project demonstrates key concepts of concurrent programming and TCP socket communication by allowing multiple clients to interact with the server simultaneously.
 
@@ -69,4 +69,5 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
+
 
