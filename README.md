@@ -63,11 +63,11 @@ The workflow consists of clients connecting to the server, sending textual comma
     - `EXIT`
 
 ## Example Usage
-
 ```bash
 PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
+
 
 
