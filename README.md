@@ -28,7 +28,6 @@ The workflow consists of clients connecting to the server, sending textual comma
 - Basic terminal/command line knowledge
 
 ### Steps
-
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/mihaelacoman1/DataStructureEngine
@@ -67,5 +66,6 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
+
 
 
