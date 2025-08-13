@@ -22,7 +22,6 @@ The workflow consists of clients connecting to the server, sending textual comma
   Handle client requests and server concurrency.
 
 ## Setup and Running
-
 ### Prerequisites
 - Java Development Kit (JDK) 8 or later installed
 - Basic terminal/command line knowledge
@@ -66,6 +65,3 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
-
-
-
