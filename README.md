@@ -71,8 +71,3 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
-
-
-
-
-
