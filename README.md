@@ -8,9 +8,8 @@ The workflow consists of clients connecting to the server, sending textual comma
 ## Upcoming Features / Adjustments
 
 The following commands are planned additions to improve file management. They are not yet implemented but are part of ongoing development:
-
-<p align="center">• LIST</p>: Will display all files currently stored in the server’s data/ directory. This will help users quickly see which files exist on the server.
-REPLACE <filename> <new_content>: Will replace the content of an existing file without creating a new one if it does not exist. This ensures safe updates to existing files without accidental creation of new files.
+- LIST: Will display all files currently stored in the server’s data/ directory. This will help users quickly see which files exist on the server.
+- REPLACE <filename> <new_content>: Will replace the content of an existing file without creating a new one if it does not exist. This ensures safe updates to existing files without accidental creation of new files.
 
 ## Features
 - **PUT <filename> <content>**: Upload and save a file with specified content to the server.
@@ -72,6 +71,7 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
+
 
 
 
