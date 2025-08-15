@@ -2,7 +2,8 @@
 DistributedDocDB is a Java-based client-server application designed to store, retrieve, and delete files remotely over a network. This project demonstrates key concepts of concurrent programming and TCP socket communication by allowing multiple clients to interact with the server simultaneously.
 
 ## Idea/Workflow
-DistributedDocDB is a simple client-server Java application that enables storing, retrieving, and deleting files remotely over a network. The server handles client requests concurrently, maintaining files under a dedicated data/ directory. Clients connect to the server and send textual commands. The server processes these commands by reading or writing files in its data directory, and then responds back to the client.
+DistributedDocDB is my little experiment in making document storage simple and interactive. The server keeps all files in a dedicated data/ folder, while clients can connect and use commands like PUT or GET to save and retrieve files.
+The goal is to see concurrency, networking, and file management working together in a real project — and it’s still evolving with upcoming features like LIST and REPLACE to make managing files even easier.
 
 ## Upcoming Features / Adjustments
 
@@ -70,4 +71,3 @@ PUT test.txt HelloWorld
 GET test.txt
 DELETE test.txt
 EXIT
-
